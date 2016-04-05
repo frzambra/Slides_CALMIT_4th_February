@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Checking Reveal.js</title>
+  <meta name="description" content="">
+  <meta name="author" content="Francisco Zambrano B">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/amelia/bootstrap.min.css">
+<link rel="stylesheet" href="./frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="./frameworks/revealjs/css/theme/solarized.css" id="theme">
+  <link rel="stylesheet" href="./highlighters/highlight.js/css/zenburn.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "./widgets/quiz/css/demo.css">
+<link rel="stylesheet" href = "./widgets/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href = "./widgets/interactive/css/aceeditor.css">
+<link rel="stylesheet" href = "assets/css/slidify-reveal.css">
+
+</head>
+<body>
+  
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h2>Characterization of agricultural drought in Chile</h2>
+  <p><small> <a href="http://frzambra.github.io">Francisco Zambrano Bigiarini</a>  </small></p>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <aside class='notes'>
+    <p>Some notes on the first slide</p>
+
+  </aside>
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>Context of drought in Chile</h2>
+    
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <ul class = "build incremental">
+<li>The last years Chile has been affected for different level of drought.</li>
+<li>In early 2015 in Chile unusual drought conditions occurred, the central-south part of Chile was affected for drought a situation almost unprecedented.</li>
+<li>On March 2015 in Chile were 194 administrative units (county) declarated under drought conditions (56% of whole country)</li>
+<li>According with the fifth report of the IPCC
+
+<ul>
+<li>there is an increase in global temperatures. </li>
+<li>a decrease of precipitation is expected in central-south Chile.</li>
+<li>a increase of droughts frequency </li>
+</ul></li>
+<li>Main problems in Chile:
+
+<ul>
+<li>low density of weather stations</li>
+<li>there is a lack of knowledge of the impact of rainfall deficits in agriculture</li>
+</ul></li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>Hypothesis</h2>
+    <p></q>
+It is possible to develop a merging remote sensing products of precipitation and evapotranspiration locally using in-situ data and so improve the spatial and temporal characterization of agricultural drought in Chile</p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section class='' data-state='' id='slide-4'>
+  <h2>Objectives</h2>
+  <ol class = "build incremental">
+<li>Develop a merging remote sensing product of precipitation and evapotranspiration with monthly frequency from 2000 to 2015 for the watersheds of rivers Limari, Itata y Bueno.</li>
+<li>Derive drought indices based on vegetation, land surface temperature, precipitation and evapotranspiration and assess the combined effect.</li>
+<li>Perform the characterization of agricultural drought</li>
+</ol>
+
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>Study area</h2>
+    
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Limarí river basin</h2>
+
+<iframe src="./assets/widgets/area_estudio_cuenca_limari.html" width=100% height=500 allowtransparency="true"> </iframe>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Itata river basin</h2>
+
+<iframe src="./assets/widgets/area_estudio_cuenca_itata.html" width=100% height=500 allowtransparency="true"> </iframe>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Bueno river basin</h2>
+
+<iframe src="./assets/widgets/area_estudio_cuenca_bueno.html" width=100% height=500 allowtransparency="true"> </iframe>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>Methodology</h2>
+    
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Remote sensing data</h2>
+
+<ul>
+<li>MODIS (Vegetation)
+
+<ul>
+<li><strong>MCD12Q1</strong> (IGBP) : Landcover Type, 1km, yearly, 2001 - 2013.</li>
+<li><strong>MOD13A3</strong>  : NDVI, 1km, monthly, 2000 - 2015. </li>
+<li><strong>MOD11A2</strong> : LST, 1km, 8 days, 2000 - 2015</li>
+<li><strong>MOD16</strong> : \(ET_0\), 1km, monthly, 2000 - 2015</li>
+</ul></li>
+<li>Precipitation
+
+<ul>
+<li><strong>TRMM 3B43 v7</strong>: Precipitation, 0.25&deg; , monthly, 1998 - 2015</li>
+<li><strong>Persiann-CDR</strong> : Precipitation, 0.25&deg; , daily, 1983 - 2015</li>
+<li><strong>CHIRPS 2.0</strong> : Precipitation, 0.05&deg; , monthly, 1981 - 2015</li>
+</ul></li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Meteorological stations</h2>
+
+<ul>
+<li>From the data base of Center for Science for Climate and Resilience (CR2) from the University of Chile (<a href="http://www.cr2.cl">http://www.cr2.cl</a>).
+
+<ul>
+<li>Precipitation : 781 station with daily and monthly data</li>
+<li>Extreme temperatures : 281 stations</li>
+</ul></li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Merging</h2>
+
+<p>To improve the accuracy of the precipitation and evapotranspiration (ET) remote sensing products merging techniques will be used.</p>
+
+<ul>
+<li>Regression-Kriging (RK) : Spatial prediction of the in-situ measurements using the remote sensing product as predictor and additional information.</li>
+<li>Bayesian combination.</li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Derivation of drought indices</h2>
+
+<h3>2000 - 2015</h3>
+
+<ul>
+<li><strong>Standardized vegetation index (SVI) :</strong> From NDVI (MOD13A3) the standardized anomaly was calculated as:</li>
+</ul>
+
+<p>\[SVI = \frac{NDVI -\overline{NDVI}}{NDVI_\sigma}\]</p>
+
+<ul>
+<li><strong>Vegetation condition index (VCI) :</strong> The time series of NDVI images was smoothed using a locally-weighted polynomial regression (LOWESS), then:</li>
+</ul>
+
+<p>\[VCI = \frac{NDVI - NDVI_{min}}{NDVI_{max}-NDVI_{min}}\]</p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Derivation of drought indices</h2>
+
+<h3>2000 - 2015</h3>
+
+<ul>
+<li><strong>Temperature condition index :</strong> The Land Surface Temperature (LST) images of 8 days was converted to monthly and then:</li>
+</ul>
+
+<p>\[TCI = \frac{LST_{max} -LST}{LST_{max}-LST_{min}}\]</p>
+
+<ul>
+<li><strong>Vegetation health index :</strong> Combines the response of vegetation and land surface temperature</li>
+</ul>
+
+<p>\[VHI = 0.5\cdot VCI + 0.5 \cdot TCI\]</p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Derivation of drought indices</h2>
+
+<h3>1983/1998 - 2015</h3>
+
+<ul>
+<li><strong>Precipitation Condition Index (PCI):</strong> this index was/will calculated for monthly accumulated precipitation of 1, 3 and 6 months using the remote sensing precipitation products.</li>
+</ul>
+
+<p>\[PCI = \frac{PP_{rs}-PP_{rs}_{min}}{PP_{rs}_{max}-PP_{rs}_{min}}\]</p>
+
+<ul>
+<li><strong>Scaled Drought Condition Index (SDCI) :</strong> this index was calculated using the three time scales of PCI (1, 3 and 6)</li>
+</ul>
+
+<p>\[SDCI = 0.5\cdot PCI + 0.25 \cdot TCI + 0.25 \cdot VCI\]</p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Derivation of drought indices</h2>
+
+<h3>1983/1998 - 2015</h3>
+
+<ul>
+<li><p><strong>Standardized Precipitation Index (\(SPI_{rs}\)) :</strong> with the resulting precipitation from the mergin procedure it would be possible to derive an a spatial SPI.</p></li>
+<li><p><strong>Standardized Precipitation Evapotrasnpiration Index (\(SPEI_{rs}\)) :</strong> with the resulting precipitation and evapotranspiration from the mergin procedure it would be possible to derive an a spatial SPEI.</p></li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Data analysis</h2>
+
+<ul>
+<li>Exploratory data analsis od the derived indices</li>
+<li>Different statistics to compare merging products.</li>
+<li>Point to point correlation between vegetation/temperture indices and precipitation.</li>
+<li>Maximum Covariance Analysis (MCA) between pair of indices vegetation/temperature, vegetation/precipitation and precipitation/temperature </li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>Preliminary results</h2>
+    
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Persiann-CDR/TRMM 3B43 v7 vs in-situ</h3>
+
+<div style='text-align: center;'>
+    <img width='100%' src='./assets/fig/precipitation_correlation_latitud.png' />
+</div>
+
+<div style='text-align: center;'>
+    <img width='100%' src='./assets/fig/boxplot_south_central_north_altitude.png' />
+</div>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Correlation between indices in the Itata river basin</h3>
+
+<div style='text-align: center;'>
+    <img width='100%' src='./assets/fig/correlacion_regional-1.png' />
+</div>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Comparison between indices in Chile on March 2015</h3>
+
+<p>PCI-1, PCI-3 and PCI-6</p>
+
+<div style='text-align: center;'>
+    <img width='100%' src='./assets/fig/Rplot02.png' />
+</div>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Comparison between indices in Chile on March 2015</h3>
+
+<p>SVI, TCI, VCI and VHI</p>
+
+<div style='text-align: center;'>
+    <img width='100%' src='./assets/fig/Rplot.png' />
+</div>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section class='' data-state='' id='slide-8'>
+  <h2>The end</h2>
+  <h3>Thanks</h3>
+
+</section>
+<section class='' data-state='' id='slide-9'>
+  <h2>RVL.IO</h2>
+  <p>If you don&#39;t like writing slides in HTML you can use the online editor <a href="http://rvl.io">rvl.io</a>.</p>
+
+</section>
+<section class='' data-state='' id='slide-10'>
+  <h2>Works in Mobile Safari</h2>
+  <p>Try it out! You can swipe through the slides and pinch your way to the overview.</p>
+
+</section>
+<section class='' data-state='' id='slide-11'>
+  <h2>Marvolous Unordered List</h2>
+  <ul>
+<li>No order here</li>
+<li>Or here</li>
+<li>Or here</li>
+<li>Or here</li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-12'>
+  <h2>Fantastic Ordered List</h2>
+  <ol>
+<li>One is smaller than...</li>
+<li>Two is smaller than...</li>
+<li>Three!</li>
+</ol>
+
+</section>
+<section class='' data-state='' id='transitions'>
+  <h2>TRANSITION STYLES</h2>
+  <p>You can select from different transitions, like: </p>
+
+<p><a href="?transition=cube#/transitions">Cube</a> - <a href="?transition=page#/transitions">Page</a> - <a href="?transition=concave#/transitions">Concave</a> - <a href="?transition=zoom#/transitions">Zoom</a> - <a href="?transition=linear#/transitions">Linear</a> - <a href="?transition=fade#/transitions">Fade</a> - <a href="?transition=none#/transitions">None</a> - <a href="?transition=default#/transitions">Default</a></p>
+
+</section>
+<section class='' data-state='' id='themes'>
+  <h2>Themes</h2>
+  <p>Reveal.js comes with a few themes built in: </p>
+
+<p><a href="?theme=sky#/themes">Sky</a> - <a href="?theme=beige#/themes">Beige</a> - <a href="?theme=simple#/themes">Simple</a> - <a href="?theme=serif#/themes">Serif</a> - <a href="?theme=night#/themes">Night</a> - <a href="?theme=default#/themes">Default</a> - <a href="?theme=solarized#/themes">Solarized</a> - <a href="?theme=moon#/themes">Moon</a></p>
+
+<p><small>* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.</small></p>
+
+</section>
+<section>
+   <section class='' data-state='alert'>
+    <h2>Global State</h2>
+    <p>Set <code>data-state=&quot;something&quot;</code> on a slide and &quot;something&quot; will be added as a class to the document element when the slide is open. This lets you apply broader style changes, like switching the background.</p>
+
+<p><a href="#" class="image navigate-down">
+  <img width="178" height="238" 
+    src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+</a></p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state='blackout'>
+    <h2>Blackout</h2>
+
+<p><a href="#" class="image navigate-down">
+  <img width="178" height="238" 
+    src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+</a></p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state='soothe'>
+    <h2>Soothe</h2>
+
+<p><a href="#" class="image navigate-next">
+  <img width="178" height="238" alt="Up arrow" style="-webkit-transform: rotate(-90deg);"
+    src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" >
+</a></p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section>
+   <section class='' data-state='red'>
+    <h2>Custom Soothe Styles</h2>
+    
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state='orange'>
+    <h2>Orange</h2>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state='yellow'>
+    <h2>Yellow</h2>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state='green'>
+    <h2>Green</h2>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state='blue'>
+    <h2>Blue</h2>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state='indigo'>
+    <h2>Indigo</h2>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state='violet'>
+    <h2>Violet</h2>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state='brown'>
+    <h2>Brown</h2>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section class='' data-state='' id='slide-17'>
+  <h2>Custom Events</h2>
+  <p>Additionally custom events can be triggered on a per slide basis by binding to the data-state name.</p>
+
+<pre><code>Reveal.addEventListener( &#39;customevent&#39;, function() {
+  console.log( &#39;&quot;customevent&quot; has fired&#39; );
+} );
+</code></pre>
+
+</section>
+<section class='' data-state='' id='slide-18'>
+  <h2>Clever Quotes</h2>
+  <p>These guys come in two forms, inline:  <q>The nice thing about standards is that there are so many to choose from and block:</q></p>
+
+<blockquote>
+<p>For years there has been a theory that millions of monkeys typing at random on millions of typewriters would reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.</p>
+</blockquote>
+
+</section>
+<section class='' data-state='' id='slide-19'>
+  <h2>Pretty Code</h2>
+  <pre><code>function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) ) {
+        node.className += &#39; roll&#39;;
+      }
+    };
+  }
+}
+</code></pre>
+
+<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a></p>
+
+</section>
+<section class='' data-state='' id='slide-20'>
+  <h2>Intergalactic Interconnections</h2>
+  <p>You can link between slides internally, <a href="#/2/3">like this</a>.</p>
+
+</section>
+<section class='' data-state='' id='slide-21'>
+  <h2>Fragmented Views</h2>
+  <p>Hit the next arrow...</p>
+
+<p class='fragment'>... to step through ...</p>
+
+<ul class = "build incremental">
+<li>any type</li>
+<li>of view</li>
+<li><strong>fragments</strong></li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-22'>
+  <h2>Take a Moment</h2>
+  <p>Press b or period on your keyboard to enter the &#39;paused&#39; mode. This mode is helpful when you want to take distracting slides off the screen during a presentation.</p>
+
+</section>
+<section class='' data-state='' id='slide-23'>
+  <h2>Incremental Paragraphs</h2>
+  <p class='fragment'>This is paragraph 1 and should appear on first click.</p>
+
+<p class='fragment'>This is paragraph 2 and should appear on second click.</p>
+
+<p class='small'><a href="#/0">Back to the Beginning</a></p>
+
+</section>
+<section class='' data-state='' id='slide-24'>
+  <h2>Title</h2>
+  <p>This is a slide</p>
+
+<ul>
+<li>point 1</li>
+<li>point 2</li>
+<li>point 3</li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-25'>
+  <h2>Incremental Reveal</h2>
+  <p>These points should be animated</p>
+
+<ul class = "build incremental">
+<li>Point 1</li>
+<li class='highlight-red'>Point 2</li>
+<li class='grow'>Point 3</li>
+</ul>
+
+<script>
+$('ul.incremental li').addClass('fragment')
+</script>
+
+</section>
+<section class='' data-state='' id='slide-26'>
+  <h2>Code with slide</h2>
+  <pre><code class="r">library(ggplot2)
+qplot(wt, mpg, data = mtcars)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-3-1.png" alt="plot of chunk unnamed-chunk-3"></p>
+
+</section>
+<section>
+   <section class='' data-state='soothe'>
+    <h2>Vertical Slides</h2>
+    <p>The next set of slides will be vertical slides.</p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Slide 1</h2>
+
+<p>This is slide 1</p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>Slide 2</h2>
+
+<iframe src='http://www.statdistributions.com' width = '960px' height = '600px'></iframe>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+    </div>
+  </div>
+</body>
+  <script src="./frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="./frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'solarized', 
+    transition: Reveal.getQueryHash().transition || 'concave', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: './frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: './frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: './frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: './frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script> -->
+<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="./widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script src='./widgets/bootstrap/js/bootstrap.min.js'></script>
+<script src="./widgets/bootstrap/js/bootbox.min.js"></script>
+<script>  
+$(function (){ 
+  $("#example").popover(); 
+  $("[rel='tooltip']").tooltip(); 
+});  
+</script>  
+<!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="./highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>
